@@ -1,16 +1,8 @@
 # freezed_test
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Open application_state.dart
+2. Modify @required List<String> mediaIdList to @required List<int> mediaIdList
+3. Run flutter pub run build_runner build --delete-conflicting-outputs
+4. Analyzer reports old errors.
+5. Restart analyzer
+6. Analyzer works correctly

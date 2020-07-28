@@ -14,8 +14,8 @@ class _$ApplicationStateTearOff {
 
 // ignore: unused_element
   Loaded loaded(
-      {@required List<int> mediaIdList,
-      @required Set<String> selectedMediaIdSet,
+      {@required List<String> mediaIdList,
+      @required Set<int> selectedMediaIdSet,
       @required Map<String, String> originalMediaMap,
       @required Map<String, File> editedImageMap,
       @required String currentlySelectedMediaId,
@@ -37,8 +37,8 @@ class _$ApplicationStateTearOff {
 const $ApplicationState = _$ApplicationStateTearOff();
 
 mixin _$ApplicationState {
-  List<int> get mediaIdList;
-  Set<String> get selectedMediaIdSet;
+  List<String> get mediaIdList;
+  Set<int> get selectedMediaIdSet;
   Map<String, String> get originalMediaMap;
   Map<String, File> get editedImageMap;
   String get currentlySelectedMediaId;
@@ -49,8 +49,8 @@ mixin _$ApplicationState {
   Result when<Result extends Object>({
     @required
         Result loaded(
-            List<int> mediaIdList,
-            Set<String> selectedMediaIdSet,
+            List<String> mediaIdList,
+            Set<int> selectedMediaIdSet,
             Map<String, String> originalMediaMap,
             Map<String, File> editedImageMap,
             String currentlySelectedMediaId,
@@ -60,8 +60,8 @@ mixin _$ApplicationState {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result loaded(
-        List<int> mediaIdList,
-        Set<String> selectedMediaIdSet,
+        List<String> mediaIdList,
+        Set<int> selectedMediaIdSet,
         Map<String, String> originalMediaMap,
         Map<String, File> editedImageMap,
         String currentlySelectedMediaId,
@@ -87,8 +87,8 @@ abstract class $ApplicationStateCopyWith<$Res> {
           ApplicationState value, $Res Function(ApplicationState) then) =
       _$ApplicationStateCopyWithImpl<$Res>;
   $Res call(
-      {List<int> mediaIdList,
-      Set<String> selectedMediaIdSet,
+      {List<String> mediaIdList,
+      Set<int> selectedMediaIdSet,
       Map<String, String> originalMediaMap,
       Map<String, File> editedImageMap,
       String currentlySelectedMediaId,
@@ -117,10 +117,10 @@ class _$ApplicationStateCopyWithImpl<$Res>
     return _then(_value.copyWith(
       mediaIdList: mediaIdList == freezed
           ? _value.mediaIdList
-          : mediaIdList as List<int>,
+          : mediaIdList as List<String>,
       selectedMediaIdSet: selectedMediaIdSet == freezed
           ? _value.selectedMediaIdSet
-          : selectedMediaIdSet as Set<String>,
+          : selectedMediaIdSet as Set<int>,
       originalMediaMap: originalMediaMap == freezed
           ? _value.originalMediaMap
           : originalMediaMap as Map<String, String>,
@@ -144,8 +144,8 @@ abstract class $LoadedCopyWith<$Res>
       _$LoadedCopyWithImpl<$Res>;
   @override
   $Res call(
-      {List<int> mediaIdList,
-      Set<String> selectedMediaIdSet,
+      {List<String> mediaIdList,
+      Set<int> selectedMediaIdSet,
       Map<String, String> originalMediaMap,
       Map<String, File> editedImageMap,
       String currentlySelectedMediaId,
@@ -174,10 +174,10 @@ class _$LoadedCopyWithImpl<$Res> extends _$ApplicationStateCopyWithImpl<$Res>
     return _then(Loaded(
       mediaIdList: mediaIdList == freezed
           ? _value.mediaIdList
-          : mediaIdList as List<int>,
+          : mediaIdList as List<String>,
       selectedMediaIdSet: selectedMediaIdSet == freezed
           ? _value.selectedMediaIdSet
-          : selectedMediaIdSet as Set<String>,
+          : selectedMediaIdSet as Set<int>,
       originalMediaMap: originalMediaMap == freezed
           ? _value.originalMediaMap
           : originalMediaMap as Map<String, String>,
@@ -213,9 +213,9 @@ class _$Loaded implements Loaded {
         assert(error != null);
 
   @override
-  final List<int> mediaIdList;
+  final List<String> mediaIdList;
   @override
-  final Set<String> selectedMediaIdSet;
+  final Set<int> selectedMediaIdSet;
   @override
   final Map<String, String> originalMediaMap;
   @override
@@ -280,8 +280,8 @@ class _$Loaded implements Loaded {
   Result when<Result extends Object>({
     @required
         Result loaded(
-            List<int> mediaIdList,
-            Set<String> selectedMediaIdSet,
+            List<String> mediaIdList,
+            Set<int> selectedMediaIdSet,
             Map<String, String> originalMediaMap,
             Map<String, File> editedImageMap,
             String currentlySelectedMediaId,
@@ -297,8 +297,8 @@ class _$Loaded implements Loaded {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result loaded(
-        List<int> mediaIdList,
-        Set<String> selectedMediaIdSet,
+        List<String> mediaIdList,
+        Set<int> selectedMediaIdSet,
         Map<String, String> originalMediaMap,
         Map<String, File> editedImageMap,
         String currentlySelectedMediaId,
@@ -339,8 +339,8 @@ class _$Loaded implements Loaded {
 
 abstract class Loaded implements ApplicationState {
   const factory Loaded(
-      {@required List<int> mediaIdList,
-      @required Set<String> selectedMediaIdSet,
+      {@required List<String> mediaIdList,
+      @required Set<int> selectedMediaIdSet,
       @required Map<String, String> originalMediaMap,
       @required Map<String, File> editedImageMap,
       @required String currentlySelectedMediaId,
@@ -348,9 +348,9 @@ abstract class Loaded implements ApplicationState {
       @required bool error}) = _$Loaded;
 
   @override
-  List<int> get mediaIdList;
+  List<String> get mediaIdList;
   @override
-  Set<String> get selectedMediaIdSet;
+  Set<int> get selectedMediaIdSet;
   @override
   Map<String, String> get originalMediaMap;
   @override

@@ -7,8 +7,8 @@ part 'application_state.freezed.dart';
 @freezed
 abstract class ApplicationState with _$ApplicationState {
   const factory ApplicationState.loaded(
-      {@required List<int> mediaIdList,
-      @required Set<String> selectedMediaIdSet,
+      {@required List<String> mediaIdList,
+      @required Set<int> selectedMediaIdSet,
       @required Map<String, String> originalMediaMap,
       @required Map<String, File> editedImageMap,
       @required String currentlySelectedMediaId,
